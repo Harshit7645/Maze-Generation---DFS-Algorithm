@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze</title>
+    <style>
+        h1{
+            text-align:center;
+            text-indent: 100px;
+            font-family: 'Merienda';
+            font-size: 50px;
+        }
+        canvas{
+            text-align:center;
+        }
+        div{
+            text-align:center;
+            font-size: 20px;
+            font-family: 'Neucha';
+        }
+    </style>
+</head>
+<body style="background-image:url(preview.jpg);">
+    <h1>Maze Generator</h1>
+    <h1></h1>
+    <div style="text-align:center">
+        <form id="settings" action="">
+            <p>Maze Size (On Screen)</p>
+            <input id="size" type="number" value="1000" style="height:20px;"/></br>
+            <p>Enter the Number of Rows/Columns</p>
+            <input id="number" type="number" value="25" style="height:20px;" /></br>
+            </br>
+            <input id="submit" type="submit" value="Generate Maze" style="width: 150px; border-radius: 20px; box-sizing: border-box; height: 25px;">
+          </form>
+        </br>
+    <canvas class="maze"></canvas>
+    <script src="maze.js"></script>
+    </div>
+</body>
+</html>
